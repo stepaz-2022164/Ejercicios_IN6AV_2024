@@ -1,1 +1,1 @@
-# Ejercicios_IN6AV_2024
+# Ejercicio_2_B1
