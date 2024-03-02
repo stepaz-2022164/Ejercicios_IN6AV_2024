@@ -1,0 +1,227 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AdoptionSystemAV",
+    "dateExported": "2024-03-02T18:13:57.651Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "4deff9a0-ea20-43fe-a7a7-10b150956f82",
+            "name": "admin",
+            "containerId": "",
+            "created": "2024-03-02T17:54:11.644Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9c97d157-651c-48eb-909c-8473e9feaf08",
+            "name": "animal",
+            "containerId": "4deff9a0-ea20-43fe-a7a7-10b150956f82",
+            "created": "2024-03-02T17:54:11.645Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "50c62cdf-268b-4a99-ba89-26b2144596e9",
+            "name": "user",
+            "containerId": "4deff9a0-ea20-43fe-a7a7-10b150956f82",
+            "created": "2024-03-02T17:54:11.646Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "96059375-f4eb-417b-8180-ae35253cc2e2",
+            "name": "client",
+            "containerId": "",
+            "created": "2024-03-02T17:54:11.647Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "92ce32f1-ed58-4394-a8ac-eae8e5cfd90f",
+            "name": "public",
+            "containerId": "",
+            "created": "2024-03-02T17:54:11.648Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c0244a8a-bc3b-45dd-bffe-197f66854d15",
+            "colId": "61108e59-666a-4d0e-9cd8-f75fe1521374",
+            "containerId": "9c97d157-651c-48eb-909c-8473e9feaf08",
+            "name": "new animal",
+            "url": "/animal/save",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-02T17:54:11.644Z",
+            "modified": "2024-03-02T18:05:06.439Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNjk4OWVkYjM2NGViNTg2NDg4OGUiLCJ1c2VybmFtZSI6InN0ZXBheiIsIm5hbWUiOiJTZXJnaW8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5NDAyNTI1LCJleHAiOjE3MDk0MTMzMjV9.AfVjqyXHEEJKLKJGiPNwFjYlwpylQ3wu7G1gwCw1fB0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "micho"
+                    },
+                    {
+                        "name": "description",
+                        "value": "ejemplo"
+                    },
+                    {
+                        "name": "age",
+                        "value": "3"
+                    },
+                    {
+                        "name": "type",
+                        "value": "cat"
+                    },
+                    {
+                        "name": "keeper",
+                        "value": "65c584bd44f8298c01e8fb07"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c80355b-b9fb-402a-a5b2-3d30e85d4590",
+            "colId": "61108e59-666a-4d0e-9cd8-f75fe1521374",
+            "containerId": "92ce32f1-ed58-4394-a8ac-eae8e5cfd90f",
+            "name": "register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-03-02T17:54:11.645Z",
+            "modified": "2024-03-02T18:01:45.602Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Sergio"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Tepaz"
+                    },
+                    {
+                        "name": "username",
+                        "value": "stepaz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "address",
+                        "value": "calle x"
+                    },
+                    {
+                        "name": "email",
+                        "value": "stepaz@kinal.edu.gt"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e44b706b-7a98-464b-a551-37249be07dbf",
+            "colId": "61108e59-666a-4d0e-9cd8-f75fe1521374",
+            "containerId": "92ce32f1-ed58-4394-a8ac-eae8e5cfd90f",
+            "name": "login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-02T17:54:11.646Z",
+            "modified": "2024-03-02T18:02:05.275Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "stepaz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "521bf9a5-887a-475c-85cc-cd1ff3d7e644",
+            "colId": "61108e59-666a-4d0e-9cd8-f75fe1521374",
+            "containerId": "9c97d157-651c-48eb-909c-8473e9feaf08",
+            "name": "get animals",
+            "url": "/animal/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-02T17:54:11.647Z",
+            "modified": "2024-03-02T18:13:40.241Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNjk4OWVkYjM2NGViNTg2NDg4OGUiLCJ1c2VybmFtZSI6InN0ZXBheiIsIm5hbWUiOiJTZXJnaW8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5NDAyNTI1LCJleHAiOjE3MDk0MTMzMjV9.AfVjqyXHEEJKLKJGiPNwFjYlwpylQ3wu7G1gwCw1fB0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "84648678-96f1-4f0f-8864-84535b4182c2",
+            "colId": "61108e59-666a-4d0e-9cd8-f75fe1521374",
+            "containerId": "96059375-f4eb-417b-8180-ae35253cc2e2",
+            "name": "save apppointment",
+            "url": "/appointment/save",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-02T17:54:11.648Z",
+            "modified": "2024-03-02T18:12:29.573Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNjk4OWVkYjM2NGViNTg2NDg4OGUiLCJ1c2VybmFtZSI6InN0ZXBheiIsIm5hbWUiOiJTZXJnaW8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5NDAyNTI1LCJleHAiOjE3MDk0MTMzMjV9.AfVjqyXHEEJKLKJGiPNwFjYlwpylQ3wu7G1gwCw1fB0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "date",
+                        "value": "2024-02-03 14:00"
+                    },
+                    {
+                        "name": "animal",
+                        "value": "65e36b0aedb364eb58648899"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e36989edb364eb5864888e"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
